@@ -14,10 +14,11 @@ func SumArray(numbers []int) int {
 
 func SumAll(numbersToAdd ...[]int) []int {
 
-	length := len(numbersToAdd)
-	sums := make([]int, length)
-	for i, number := range numbersToAdd {
-		sums[i] = SumArray(number)
+	//length := len(numbersToAdd)
+	//sums := make([]int, length)
+	var sums []int
+	for _, number := range numbersToAdd {
+		sums = append(sums, SumArray(number))
 	}
 
 	return sums
