@@ -23,3 +23,20 @@ func SumAll(numbersToAdd ...[]int) []int {
 
 	return sums
 }
+
+func SumAllTails(numbersToAdd ...[]int) []int {
+
+	var sums []int
+	for _, number := range numbersToAdd {
+		if len(number) == 0 {
+			//sums = append(sums, 0)
+			//sums = sums
+		} else {
+
+			number = number[len(number)-1:]
+			sums = append(sums, SumArray(number))
+		}
+	}
+
+	return sums
+}
