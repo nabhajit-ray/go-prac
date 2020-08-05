@@ -1,6 +1,11 @@
 package main
 
-func Perimeter(a float64, b float64) float64 {
+func Perimeter(length float64, breadth float64) float64 {
 
-	return 2 * (a + b)
+	return 2 * (length + breadth)
+}
+
+func Area(length float64, breadth float64) float64 {
+
+	return length * breadth
 }
