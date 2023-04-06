@@ -11,7 +11,7 @@ const frenchhHelloPrefix = "Bonjour, "
 func Hello(name, language string) string {
 
 	if name == "" {
-		name = "World1"
+		name = "World"
 	}
 	return greetingPrefix(language) + name
 
